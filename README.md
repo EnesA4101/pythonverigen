@@ -1,33 +1,33 @@
 Gerekli Modüller:
-pip install flask
-pip install openpyxl
-pip install pandas
-pip install flask
-pip install mysql-connector-python
+pip install flask <br>
+pip install openpyxl <br>
+pip install pandas <br>
+pip install flask <br>
+pip install mysql-connector-python <br>
 
-Ayarlar İçin:
+Ayarlar İçin:<br>
 
 Veritabanı Ayarları İçin:
-db.py =>
+db.py =><br>
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="",
-  database="ai_api"
-)
-index.php içinde=>
-var serverlink = "http://ip:port";
-var sunuculink = "http://localhost/dosyakonumu/"
-var dosyaisim ="datas";
+mydb = mysql.connector.connect(<br>
+  host="localhost",<br>
+  user="root",<br>
+  password="",<br>
+  database="ai_api"<br>
+)<br>
+index.php içinde=><br>
+var serverlink = "http://ip:port";<br>
+var sunuculink = "http://localhost/dosyakonumu/"<br>
+var dosyaisim ="datas";<br>
 
-!dosyaisim değiştirmek için ayrıca gen.py içinde konum değişmeli =>
+!dosyaisim değiştirmek için ayrıca gen.py içinde konum değişmeli =><br>
 
-hasta_verileri.to_excel('datas/'+dosyaisim+'.xlsx', index=False)
-hasta_verileri.to_csv('datas/'+dosyaisim+'.csv', index=False)
+hasta_verileri.to_excel('datas/'+dosyaisim+'.xlsx', index=False)<br>
+hasta_verileri.to_csv('datas/'+dosyaisim+'.csv', index=False)<br>
 
-Çalıştırmak İçin:
-
-1) database içe aktarma
-2) server.py çalıştırma
-3) php server + mysql server başlatma
+Çalıştırmak İçin:<br>
+<br>
+1) database içe aktarma<br>
+2) server.py çalıştırma<br>
+3) php server + mysql server başlatma<br>
